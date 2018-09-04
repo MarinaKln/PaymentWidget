@@ -20,11 +20,6 @@ export default class CountrySelect extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            visibility: false,
-            geolocationData: {}
-        };
-
         this.createCountriesList = this.createCountriesList.bind(this);
     }
 
