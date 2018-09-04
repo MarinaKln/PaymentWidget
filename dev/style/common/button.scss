@@ -1,0 +1,30 @@
+.button {
+	outline: none;
+	background: inherit;
+	cursor: pointer;
+
+	&__success {
+		height: 45px;
+		line-height: 45px;
+		padding: 0 30px;
+		border-radius: 5px;
+		background: $success_color;
+		color: #FFFFFF;
+		border: none;
+		font-size: 16px;
+		font-family: OpenSans-Semibold;
+		transition: .4s;
+
+		&:disabled {
+			opacity: 0.7;
+		}
+
+		&:not(:disabled):hover {
+			background: lighten($success_color, 5%);
+		}
+
+		&:not(:disabled):active {
+			background: darken($success_color, 5%);
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.country-select {
+	&__wrap {
+		padding-bottom: 15px;
+	}
+
+	&__holder {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__current {
+		font-size: 16px;
+		font-family: OpenSans-Semibold;
+		margin: 0;
+		padding: 5px 10px;
+		background: #fff;
+		border-radius: 5px;
+		max-width: 250px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__label {
+		font-size: 16px;
+		font-family: OpenSans-Semibold;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+}

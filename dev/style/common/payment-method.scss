@@ -1,0 +1,58 @@
+.payment-method {
+	&__wrap {
+		padding-bottom: 15px;
+	}
+
+	&__label {
+		font-size: 16px;
+		font-family: OpenSans-Semibold;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+
+	&__items-wrap {
+		display: flex;
+		flex-wrap: wrap;
+
+		&.disabled {
+			opacity: 0.8;
+		}
+	}
+
+	&__item {
+		flex-grow: 1;
+		height: 70px;
+		border-radius: 5px;
+		border: none;
+		position: relative;
+		background: $main_pale;
+		margin-bottom: 5px;
+		transition: .4s;
+
+		&:not(:last-of-type) {
+			margin-right: 10px;
+		}
+
+		&:not(.active):hover {
+			background-color: lighten($main_pale, 5%);
+		}
+
+		&.active {
+			background-color: darken($main_pale, 10%);
+		}
+	}
+
+	&__item-name {
+		transition: .4s;
+		color: #FFFFFF;
+		font-family: OpenSans-Semibold;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		display: block;
+	}
+
+	&__img {
+		max-width: 95px;
+	}
+}

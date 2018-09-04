@@ -1,0 +1,18 @@
+.success-screen {
+	position: absolute;
+	background: url('../../images/check.png') center 25% no-repeat #ffffff;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+
+	&__inner {
+		color: $success_color;
+		font-size: 17px;
+		font-family: OpenSans-Semibold;
+	}
+}

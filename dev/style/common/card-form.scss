@@ -1,0 +1,85 @@
+.card-form {
+
+	&__inner {
+		background: $main_blue;
+		border-radius: 10px;
+		padding: 20px;
+		width: 350px;
+	}
+
+	&__items-holder   {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 25px;
+	}
+
+	&__label {
+		padding: 5px;
+		display: inline-block;
+		position: relative;
+		transition: .3s;
+
+		&.has-error {
+			padding-bottom: 15px;
+		}
+	}
+
+	&__placeholder {
+		font-size: 13px;
+		display: block;
+		color: #FFFFFF;
+	}
+
+	&__warning {
+		position: absolute;
+		bottom: -3px;
+		display: block;
+		white-space: nowrap;
+		right: 5px;
+		font-size: 12px;
+	}
+
+	&__input {
+		outline: none;
+		border-radius: 4px;
+		height: 30px;
+		line-height: 30px;
+		border: 1px solid #dcdcdc;
+		padding: 0 10px;
+		position: relative;
+		z-index: 2;
+
+		&:focus {
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	&__number-holder {
+		display: block;
+	}
+
+	&__number {
+		width: 90%;
+	}
+
+	&__name-holder {
+		display: block;
+	}
+
+	&__name {
+		width: 90%;
+	}
+
+	&__cvv {
+		max-width: 50px;
+	}
+
+	&__date {
+		max-width: 80px;
+	}
+
+	&__submit {
+		margin-top: 15px;
+	}
+}

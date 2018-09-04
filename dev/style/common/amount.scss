@@ -1,0 +1,31 @@
+.amount {
+	&__wrap {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 15px;
+	}
+
+	&__input {
+		height: 30px;
+		line-height: 30px;
+		border-radius: 4px;
+		outline: none;
+		border: 1px solid #dcdcdc;
+		padding: 0 10px;
+	}
+
+	&__input-label {
+		display: block;
+		font-size: 16px;
+		font-family: OpenSans-Semibold;
+		padding-bottom: 10px;
+	}
+
+	&__currency-text {
+		margin: 0;
+		font-size: 18px;
+		font-family: OpenSans-Semibold;
+		padding-left: 15px;
+		color: #FFFFFF;
+	}
+}
